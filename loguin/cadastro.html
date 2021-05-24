@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="css/Cadastro.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  
+  <div id="cadastro">
+    <form method="post" action="">
+      <h1>Cadastro</h1>
+
+      <p>
+        <label for="nome_cad">Nome Completo</label>
+        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="ex:Gustavo Ferreira "  />
+      </p>
+      <p>
+        <label for="nome_cad">Data de Nascimento</label>
+        <input id="nome_cad" name="nome_cad" required="required" type="date"  />
+      </p>
+
+      <p>
+        <label for="nome_cad">Celular</label>
+        <input id="nome_cad" name="nome_cad" required="required" type="tel" placeholder="ex:(16)994192807" pattern="[0-9]{3}[0-9]{4}-{0-9}{4}" maxlength="11" onkeypress="$(this).mask('(00)00000-0000') " />
+      </p>
+      <p>
+        <label for="email_cad">Seu e-mail</label>
+        <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@hotmail.com" />
+      </p>
+
+      <p>
+        <label for="senha_cad">Sua senha</label>
+        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. S3nh@" />
+      </p>
+      <p>
+        <label for="senha_cad">Confirmar Senha</label>
+        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. S3nh@" />
+      </p>
+
+      <p>
+        <input type="submit" value="Cadastrar" />
+      </p>
+
+      <p class="link">
+       
+        <a href="loguin.html"id=#irLoguin> Ir para Login </a>
+      </p>
+    </form>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>
